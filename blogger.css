@@ -1,3 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.product-title {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.product-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-image {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-description {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #e74c3c;
+}
+
+.product-status {
+    font-size: 18px;
+    color: #2ecc71;
+    margin: 10px 0;
+}
+
+.buy-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.buy-button:hover {
+    background-color: #2980b9;
+}
+
+/* RWD 設計 */
+@media (max-width: 768px) {
+    .product-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-title h1 {
+        font-size: 24px;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+
+    .buy-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
 /* 確保圖片和文字自動調整 */
 figure {
     display: flex;
