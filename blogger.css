@@ -75,6 +75,79 @@ header {
     background-color: #2980b9;
 }
 
+/* --- 商品卡片容器 --- */
+.product-card {
+  width: 100%;
+  max-width: 750px;
+  margin: 20px auto;
+  padding: 18px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/* --- 圖片 --- */
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* --- 商品內容 --- */
+.product-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 15px 0 10px;
+}
+
+.product-desc {
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* --- 價格 --- */
+.product-price {
+  font-size: 1.25rem;
+  color: #e63946;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* --- 按鈕 --- */
+.product-btn {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #ff6f3c;
+  color: #fff !important;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.product-btn:hover {
+  background: #e65a26;
+}
+
+/* --- RWD --- */
+@media (max-width: 600px) {
+  .product-title {
+    font-size: 1.25rem;
+  }
+  .product-price {
+    font-size: 1.15rem;
+  }
+  .product-btn {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    width: 100%;
+  }
+}
+
 /* RWD 設計 */
 @media (max-width: 768px) {
     .product-images {
@@ -153,3 +226,4 @@ tr:nth-child(even) {
 tr:hover {
     background: #f1f1f1;
 }
+
