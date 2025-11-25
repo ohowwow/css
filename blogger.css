@@ -17,11 +17,6 @@ header {
     max-width: 1200px;
 }
 
-.product-title {
-    text-align: center;
-    margin: 40px 0;
-}
-
 .product-images {
     display: flex;
     flex-wrap: wrap;
@@ -42,11 +37,6 @@ header {
 .product-description {
     text-align: center;
     margin: 40px 0;
-}
-
-.product-price {
-    font-size: 24px;
-    color: #e74c3c;
 }
 
 .product-status {
@@ -134,18 +124,7 @@ header {
 
 /* --- RWD --- */
 @media (max-width: 600px) {
-  .product-title {
-    font-size: 1.25rem;
-  }
-  .product-price {
-    font-size: 1.15rem;
-  }
-  .product-btn {
-    display: block;
-    text-align: center;
-    padding: 14px;
-    width: 100%;
-  }
+
 }
 
 /* RWD 設計 */
@@ -162,13 +141,7 @@ header {
 }
 
 @media (max-width: 480px) {
-    .product-title h1 {
-        font-size: 24px;
-    }
 
-    .product-price {
-        font-size: 20px;
-    }
 
     .buy-button {
         font-size: 16px;
@@ -226,4 +199,5 @@ tr:nth-child(even) {
 tr:hover {
     background: #f1f1f1;
 }
+
 
